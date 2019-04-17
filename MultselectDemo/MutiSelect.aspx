@@ -14,16 +14,34 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            //$('iframe').each(function () {
+            //    var url = $(this).attr("src");
+            //    $(this).attr("src", url + "?wmode=transparent");
+            //});
+
             $('#selectpicker').multiselect({
+                enableFiltering: true,
                 enableClickableOptGroups: true,
-                dropup: true,
-                maxHeight:300
+                dropUp: true,
+                maxHeight: 300
             });
         });
     </script>
+    <style type="text/css">
+        .background-frame {
+            border: none;
+            position: fixed;
+            top: auto !important;
+            left: 0px !important;
+            width: 320% !important;
+            height: 400px important;
+            z-index: -1 !important;
+            background-color: rgba(236,240,245,1);
+        }
+    </style>
 </head>
 <body>
-    <iframe src="http://www.pdf995.com/samples/pdf.pdf" style="width: 100%; height: 500px"></iframe>
+    <iframe src="http://www.pdf995.com/samples/pdf.pdf?wmode=transparent" allowfullscreen wmode="transparent" style="width: 100%; height: 500px"></iframe>
     <form id="form1" runat="server">
         <div class="form-group">
             <label for="multipleSelect1" class="col-lg-2 control-label">multiple select1</label>
