@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="Style/bootstrap.css" rel="stylesheet" />
     <link href="/Scripts/MultiSelect/css/bootstrap-multiselect.css" rel="stylesheet" />
     <script src="/Scripts/jquery-3.3.1.js"></script>
     <script src="/Scripts/bootstrap.js"></script>
